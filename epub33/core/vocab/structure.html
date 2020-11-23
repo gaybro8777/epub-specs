@@ -2356,14 +2356,16 @@
 					<dd about="#pagebreak" property="rdfs:comment" datatype="xsd:string">
 						<p>A separator denoting the position before which a break occurs between two contiguous pages in
 							a statically paginated version of the content.</p>
+						<p>Authors must ensure the value of the page break is an end user-consumable page number that
+							identifies the page that is beginning.</p>
 					</dd>
 					<dd>
 						<p>
 							<span class="subproplabel">HTML usage context: </span>
 							<a href="https://html.spec.whatwg.org/multipage/dom.html#phrasing-content">phrasing</a> and
 								<a href="https://html.spec.whatwg.org/multipage/dom.html#flow-content">flow</a> content,
-							where the value of the carrying elements title attribute takes precedence over element
-							content for the purposes of representing the pagebreak value</p>
+							where the value of the carrying elements <code>aria-label</code> or <code>title</code> attribute
+							takes precedence over element content for the purposes of representing the page break value</p>
 					</dd>
 					<dt id="page-list" about="#page-list" typeof="rdf:Property">page-list</dt>
 					<dd about="#page-list" property="rdfs:comment" datatype="xsd:string">
